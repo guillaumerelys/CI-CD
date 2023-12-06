@@ -33,7 +33,7 @@ jobs:
       run: mvn -B package --file pom.xml
           
     - name: dynamique HTML
-      run: sh make_html.sh /target/biblio.jar
+      run: sh make_html.sh target/biblio.jar
 
     -name: liste
     run: ls 
