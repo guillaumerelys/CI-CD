@@ -36,6 +36,11 @@ jobs:
     - name: dynamique HTML
       run: sh make_html.sh target/biblio-0.1.jar
 
+    - name: cp wwwrooot
+      uses: JamesIves/github-pages-deploy-action@4
+      with:
+       branch: gh-pages 
+       folder: wwwroot
 
     - name: liste
       run: ls wwwroot
